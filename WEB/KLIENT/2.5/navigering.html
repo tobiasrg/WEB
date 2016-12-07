@@ -7,17 +7,74 @@
 </head>
 <body>
 
-<h1>Länkar</h1>
-<p>
-</p>
+<h1>Länktillstånd</h1>
+<p>En länk kan stylas med CSS beroende på vilket tillstånd den befinner sig i. Som standardläge brukar länkar vara blåa
+    och understrukna när de är obesökta <br>
+    men ändras till lila färg när de är besökta. Genom att tillämpa de olika länktillstånden i CSS kan man dock få detta
+    att se annorlunda ut</p>
+
+
+<p>Det finns fyra olika länktillstånd, vilka är:</p>
+
+<ul>
+    <li>a:link - en normal, obesökt länk</li>
+    <li>a:visited - en länk som användaren har besökt</li>
+    <li>a:hover - en länk när användaren håller musen över den</li>
+    <li>a:active - en länk i den stunden användaren klickar på denna</li>
+</ul>
+
+<p>Använder man sig av flera av dessa tillstånd i CSS är det viktigt att de skrivs i just denna ordning för att de
+    ska fungera</p>
+<p>Man kan även använda sig av cursor: för att ändra musens utseende när denna pekar på elementet</p>
+
+
+<a href="#" class="exempel">EXEMPEL</a>
+<br><br>
+
+<table>
+    <tr>
+        <th>Länktillstånd</th>
+        <th>CSS</th>
+    </tr>
+    <tr>
+        <td>:link</td>
+        <td>.exempel:link{color:black;}</td>
+    </tr>
+    <tr>
+        <td>:visited</td>
+        <td>.exempel:visited {
+            color: orange;
+            }</td>
+    </tr>
+    <tr>
+        <td>:hover</td>
+        <td>.exempel:hover {
+            font-size: 2em;
+            color: orange;
+            }</td>
+    </tr>
+    <tr>
+        <td>:active</td>
+        <td>.exempel:active {
+            color: black;
+            }</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>.exempel {
+            cursor: crosshair;
+            }</td>
+    </tr>
+</table><br><br><br>
+
 <a href="#" class="knapp1">KNAPP</a>
 
 <br>
 <br>
 
 
-<a href="http://dn.se" class="imageLink">
-    <img class="image" src="forest.jpg">
+<a href="#" class="imageLink">
+    <img class="image" alt="Bild" src="forest.jpg">
 </a>
 
 </body>
