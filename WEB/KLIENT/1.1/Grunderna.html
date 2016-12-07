@@ -6,36 +6,160 @@
 
 </head>
 <body>
-&lt;html&gt;<br><br>
+<p id="top">&lt;html&gt;</p>
 
 
-
-&lt;head&gt; <br><br>
-
+<p>&lt;head&gt;</p>
 
 
-I head-taggen lagras all metadata, vilket är data om själva html-dokumentet och ligger placerad mellan html-taggen och body-taggen<br>
-Exempel på vad en metatagg kan innehålla är exempelvis en beskrivning av hemsidan(description), författaren (author), nyckelord(keywords) för sökning eller teckenuppsättning(charset).<br>
-Meta-taggen robots gör att sidan inte visas för en sökmotors sökresultat, och taggen generator används för att beskriva vilket program som användes för att bygga hemsidan.<br>
-http-equiv kan exempelvis användas för att sätta intervall för uppdatering på hemsidan.
+<p>I head-taggen lagras all metadata, vilket är data om själva html-dokumentet och ligger placerad mellan html-taggen
+    och
+    body-taggen<br>
+    Exempel på vad en metatagg kan innehålla är exempelvis en beskrivning av hemsidan(description), författaren
+    (author),
+    nyckelord(keywords) för sökning eller teckenuppsättning(charset).<br>
+    Meta-taggen robots gör att sidan inte visas för en sökmotors sökresultat, och taggen generator används för att
+    beskriva
+    vilket program som användes för att bygga hemsidan.<br>
+    http-equiv kan exempelvis användas för att sätta intervall för uppdatering på hemsidan.<br></p>
 
-<i>exempel på metataggar: </i><br>
+<i>exempel på metataggar: </i><br><br>
 
 &lt;meta name="keywords" content="HTML, CSS, XML, Javascript&gt;<br>
 &lt;meta name="description content="Grunderna i HTML 5&gt;<br>
 &lt;meta name="author" content="Tobias Rydberg"&gt;<br>
 &lt;meta name="http-equiv content="30"&gt;<br>
-&lt;meta name=robots content="&gt;<br>
+&lt;meta name=robots content="&gt;<br><br>
 
-I headern lagras också title-taggen, vilken bestämmer titeln för dokumentet. Title-taggen visar namnet på sidan i browsern, favoriter, eller när sidan visas i sökmotorer<br>
+I headern lagras också title-taggen, vilken bestämmer titeln för dokumentet. Title-taggen visar namnet på sidan i
+browsern, favoriter, eller när sidan visas i sökmotorer<br>
 <i>Exempel på denna sida:</i> &lt;title&gt; Grunderna i HTML5&lt;/title&gt;<br><br>
 &lt;/head&gt; <br><br>
 
 
 &lt;body&gt;<br><br>
 
-&lt;/body<br>
+<p>taggen &lt;blockquote&gt; används för sektioner som är citerade från en annan hemsida:</p> <br>
+
+<blockquote>
+    detta är ett citat i en blockquote tagg
+</blockquote>
+<br><br>
+<p>taggarna &lt;h1&gt; till &lt;h6&gt; används för att skapa html-rubriker på sidan och varierar i storlekar</p><br>
+
+<i>Exempel: </i>
+
+<h1>Rubrik h1</h1>
+<h2>Rubrik h2</h2>
+<h3>Rubrik h3</h3>
+<h4>Rubrik h4</h4>
+<h5>Rubrik h5</h5>
+<h6>Rubrik h6</h6>
+
+<p>Taggen &lt;p&gt; definerar en paragraf</p>
+<p>Detta är en paragraf med &lt;p&gt; taggen</p>
+
+<p id="mid">Taggen &lt;pre&gt;definierar förformaterad text och kan se ut såhär: </p>
+
+<pre>
+"Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks"
+</pre>
+<br>
+
+<p>taggen &lt;span&gt; kan användas för att gruppera element i ett dokument, och ger användaren ett sätt att ändra en
+    del av en text eller ett dokument </p>
+
+<p>Detta är en text där span används för att <span style="color:blue">färga en del av texten blå</span></p><br>
+
+<p>Taggen &lt;a&gt; kan användas för ett flertal ändamål</p>
+
+<i>Olika typer av länkar är relativa, absoluta, länk till ankare, bild-länk, länk till olika protokoll,
+    Mailto-länk: </i><br>
+<p>Relativ: <a href="RelativLänk.html">&lt;a href="RelativLänk.html"&gt;&lt;/a&gt;</a></p>
+<p>Absolut: <a href="http://www.w3schools.com/">&lt;a href="http://www.w3schools.com/"&gt;&lt;/a&gt;</a></p>
+<p>Länk till ankare, som länkar till en specifik punkt på hemsidan (i detta fall toppen av hemsidan): <a href="#top">
+    &lt;a href="#top"&gt;&lt;/a&gt;</a></p>
+<p>bild-länk: <a href="http://www.w3schools.com/html/pic_mountain.jpg">&lt;a
+    href="http://www.w3schools.com/html/pic_mountain.jpg"&gt;&lt;/a&gt;</a></p>
+<p>Mail-to(e-postlänk): <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">&lt;a
+    href="mailto:someone@example.com?Subject=Hello%20again" target="_top"&gt;&lt;/a&gt;</a></p>
+
+<i>Olika typer av listor: </i>
+
+<p>&lt;dt&gt; definierar en term eller namn i en beskrivnings-lista. &lt;dl&gt; (definierar en beksivnings-lista) och
+    &lt;dd&gt; (beskriver varje term/namn) används i samband med &lt;dt&gt;</p>
+
+
+<dl>&lt;dl&gt;
+    <dt>&lt;dt&gt;Coffee&lt;/dt&gt;</dt>
+    <dd>&lt;dd&gt;Black hot drink&lt;/dd&gt;</dd>
+    <dt>&lt;dt&gt;Milk&lt;/dt&gt;</dt>
+    <dd>&lt;dd&gt;White cold drink&lt;dd&gt;</dd>
+    &lt;/dl&gt;</dl>
+
+<p>taggen &lt;ul&gt; definierar en lista i punktformat. &lt;li&gt; används likt &lt;dt&gt; för att definiera ett namn
+    eller term i listan </p>
+
+<ul>&lt;ul&gt;
+    <li>&lt;li&gt;Coffee&lt;/li&gt;</li>
+    <li>&lt;li&gt;Milk&lt;/li&gt;</li>
+    &lt;/ul&gt;</ul>
+<p>Taggen &lt;ol&gt; fungerar likt &lt;ul&gt; men skapar istället en ordnad lista utifrån siffror eller bokstäver</p>
+
+<ol>&lt;ol&gt;
+    <li>&lt;li&gt;Coffee&lt;/li&gt;</li>
+    <li>&lt;li&gt;Milk&lt;/li&gt;</li>
+    &lt;/ol&gt;</ol>
+
+<i>Tabeller</i>
+<p>Vid skapandet av en tabell kan flera olika taggar användas. &lt;caption&gt; används för att skapa en överskrift för
+    tabellen <br> &lt;table&gt; används för att definiera en tabell <br> &lt;td&gt; används för att definiera en cell i
+    tabellen<br> &lt;th&gt; används för att definiera en header i tabellen <br>
+    &lt;tr&gt; används för att definiera en rad i tabellen</p>
+<p><i>Exempel</i></p>
+
+
+&lt;table&gt;<table>
+    <tr>
+        <th>&lt;th&gt;Firstname&lt;/th&gt;</th>
+        <th>&lt;th&gt;Lastname&lt;/th&gt;</th>
+        <th>&lt;th&gt;Age&lt;/th&gt;</th>
+        </tr>
+    <tr>
+        <td>&lt;th&gt;Jill&lt;/th&gt;</td>
+        <td>&lt;th&gt;Smith&lt;/th&gt;</td>
+        <td>&lt;th&gt;50&lt;/th&gt;</td>
+       </tr>
+    </table>&lt;/table&gt;
+
+<p id="bottom"><i>Bilder</i></p>
+
+<p>Taggen &lt;img&gt; kan användas för att visa bilder på hemsidan: </p>
+<img src="sunrise-1756274_640.jpg">
+
+
+
+
+
+<p><i>Map och area</i><br>
+Taggen &lt;Map definierar en bild med klickbara punkter. Med &lt;area&gt;&gt; definierar man sedan punkterna inne i bilden som ska vara klickbara. </p>
+
+<p>I detta fall refererar de olika klickbara punkterna (top-vänster, top-höger och botten-höger) till olika delar av hemsidan</p>
+<img src="sunrise-1756274_640.jpg" width="640" height="320" alt="Planets"
+     usemap="#planetmap"><br>
+<map name="planetmap">
+    <area shape="rect" coords="0,0,70,55" href="#bottom" alt="Sun">
+    <area shape="rect" coords="570,0,640,55" href="#top" alt="Mercury">
+    <area shape="rect" coords="570,265,640,320" href="#mid" alt="Venus">
+</map>
+
+<br><br>&lt;/body<br>
 &lt;/html&gt;
+
 
 </body>
 </html>
