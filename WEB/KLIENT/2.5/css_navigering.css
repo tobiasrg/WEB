@@ -4,10 +4,18 @@ a:visited - a link the user has visited
 a:hover - a link when the user mouses over it
 a:active - a link the moment it is clicked
 */
+.imageLink{
+    display: block;
+    height: 100px;
+    width: 200px;
+    border: 2px solid violet;
+}
+.image{
+    width: 200px;
+    height: 100px;
+}
 
-
-
-a.knapp1:link {
+.knapp1:link {
     font-size: medium;
     background-color: black;
     color: white;
@@ -15,46 +23,30 @@ a.knapp1:link {
     text-decoration: none;
 }
 
-a.knapp2:link {
-    font-size: medium;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-}
 
-a.knapp1:visited {
-    background-color:grey;
+.knapp1:visited {
+    background-color:mediumvioletred;
     color:black;
+    border: 3px solid yellow;
+    margin: 4rem;
 }
 
-a.knapp2:visited {
-    background-color:grey;
-    color:black;
+.imageLink:visited {
+    border: 2px solid red;
 }
 
-img.knapp2:visited{
-    width: 100%;
-}
-
-
-a.knapp1:hover {
+.knapp1:hover {
     color: red;
 }
-
-a.knapp2:hover {
-
-}
-img.knapp2:hover{
-    width: 400px;
-    height: 300px;
+.image:hover{
+    border: 2px solid blue;
 }
 
-a.knapp1:active {
+.knapp1:active {
     background-color: darkgreen;
 }
 
-a.knapp2:active {
-    background-color: darkgreen;
+.image:active {
+    border: 2px solid orange;
 }
 
