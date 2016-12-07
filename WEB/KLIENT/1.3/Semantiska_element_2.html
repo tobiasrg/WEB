@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semantiska element för text</title>
+</head>
+<body>
+<h1>Mark</h1>
+
+<p>Mark-taggen markerar en del av en text och gör den synligare.</p>
+
+<p>Exempel: Detta är ett &lt;mark&gt;
+    <mark>exempel</mark>&lt;/mark&gt;
+</p>
+
+<h1> Date och datetime
+</h1>
+
+<p>Time-taggen definierar ett datum/tidpunkt som är "human readable". Date time definierar i sin tur ett datum/tidpunkt som är "machine readable". <br>
+I och med att datetime-taggen är maskinläsbar kan denna användas för att en användaragent exempelvis ska ha möjligheten att lägga till födelsedagar<br>
+    eller skicka kalenderpåminnelser, eller för att sökmotorer ska producera bättre resultat</p>
+
+<p>Exempel time: Föreläsningen börjar
+    <time>&lt;time&gt;10:00&lt;/time&gt;</time>
+    varje morgon
+</p>
+
+<p>Exempel Min födelsedag är den
+    <time datetime="2008-02-14 20:00"> sjunde juli (datumet ligger gömt som  &lt;time datetime="2008-02-14 20:00"&gt; sjunde juli&lt;/time&gt;)</time>
+    .
+</p>
+
+<h1>Wbr</h1>
+<p>Wbr-taggen står för Word Break Oppurtunity och specifierar var i texten det är lämpligt att göra en radbrytning.<br>Är ett ord exempelvis väldigt långt och man är orolig över att detta bryts på fel ställe kan det vara lämpligt att lägga till en &lt;wbr&gt; där man vill att texten ska brytas  </p>
+<p>
+    Exempel: ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------radbrytning<wbr>------------------------------------------------------------------------------------------------------------------radbrytning<wbr>-------------------------------------------------------------------------------------------------radbrytning<wbr>----------------------------
+</p>
+
+<p>Förminskar man webbläsaren kommer radbrytningar att prioriteras där det står "radbrytning" då dessa har en wbr-tagg efter sig</p>
+</body>
+</html>

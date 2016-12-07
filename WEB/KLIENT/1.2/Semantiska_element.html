@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semantiska element</title>
+</head>
+<body>
+
+<!--
+Skapa ett HTML5-dokument som är uppdelat i olika delar med de nya HTML5 taggarna:
+
+article
+nav
+header och footer
+section
+figure och figcaption
+aside
+details och summary
+Beskriv inom varje del andemeningen med delen.
+-->
+
+<header id="header">
+    <h1>Header</h1>
+    <p>Header-taggen skapar en header för dokumentet eller en sektion i dokumentet. Denna tagg används vanligtvis som en behållare för inledande innehåll i dokumentet</p>
+</header>
+
+
+<nav>
+    <h1>Nav</h1>
+    <p>Nav-taggen används för att definiera en eller flera navigationslänkar som användaren sedan kan nyttja för att ta sig runt på sidan. I detta fall refererar de olika länkarna till ankarpunkter i dokumentet </p>
+    <a href="#header">Header</a> |
+    <a href="#section">Section</a> |
+    <a href="#article">Article</a> |
+    <a href="#footer">Footer</a>
+</nav>
+
+
+<section id="section">
+    <h1>Section</h1>
+    <p>Sektions-taggen definierar en sektion i ett dokument. En hemsida kan exempelvis ha olika sektioner, med bland annat introduktion, innehåll och kontaktinformation. <br>
+        Sektions-taggen kan alltså användas för att gruppera delar av ett dokument efter innehåll.  </p>
+</section>
+
+
+<article id="article">
+    <h1>Article</h1>
+    <p>Article-taggen definierar självständigt, fristående innehåll. Kan till exempel användas vid blogginlägg eller en nyhetsartikel. Syftet är att den på egen hand ska vara meningsfull.<br>
+    Den ska alltså kunna gå att läsa fristående från allt annat på sidan.</p>
+
+    <aside>
+        <h4>Aside</h4>
+        <p>Aside-taggen kan användas för att definiera självständig information som är relaterad till informationen runt omkring denna (exempelvis som en sidebar)</p>
+    </aside>
+</article>
+
+
+
+
+<figure><h1>Figure</h1>
+    <p>Figure-taggens syfte är att ge användaren möjlighet att ge en visuell förklaring till bilden.<br>
+        &lt;Figure&gt; används för att gruppera bilden tillsammans med beskrivningen, och beskrivningen görs sedan med &lt;figcaption&gt;</p>
+    <img src="Sol.jpg" alt="Sol" width="304" height="228">
+    <figcaption>Fig1. - En sol</figcaption>
+</figure>
+
+
+<footer id="footer">
+
+    <h1>Footer</h1>
+    <p>Footer-taggen används för att definiera en footer för dokumentet. Taggen brukar generellt sett inneghålla information om författaren av dokumentet, copyright-information, kontaktinformation etc.</p>
+</footer>
+
+<h1>Details</h1>
+<p>Details-taggen gör det möjligt för användaren att definiera ytterligare information som kan visas/döljas. <br>
+Taggen &lt;Summary&gt; definierar en klickbar rubrik om omsluts av &lt;details&gt; taggen</p>
+<details>
+    <summary>Övrig information</summary>
+    <p>Här står det något</p>
+    <p>Här också</p>
+</details>
+
+</body>
+</html>
