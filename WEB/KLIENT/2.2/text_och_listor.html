@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text och listor</title>
+    <link rel="stylesheet" type="text/css" href="text_och_listor_css.css">
+</head>
+<body>
+
+
+<h1>Font-family</h1>
+
+<p> En fontfamilj används i CSS och specifierar vilken font ett visst element ska ha. Detta kan exempelvis skrivas på
+    följande sätt:<br><br>
+    p.serif{<br><br>
+    font-family: "Times new roman", serif;<br><br>
+    }<br>
+    <br>
+    Man kan genom detta sedan anropa fontfamiljen i html genom att ge p-taggen class="serif". <br>
+    I detta fall används fontfamiljen Times new roman, men har som nödlösning att använda den generiska familjen serif
+    om Times new roman inte stödjs.
+
+</p>
+<p class="serif">Detta är en text med font-familyn Times New Roman</p>
+
+<p class="sansserif">Deta är en text med font-familyn sans Arial</p>
+
+<p class="monospace">Detta är en text med font-familyn Courier New
+
+<h1>Font-size</h1>
+
+<p> Genom att sätta font-size i CSS till xx-small, x-small, small, medium, large, x-large, xx-large kan man reglera hur
+    stor eller liten fonten ska vara</p>
+
+<p class="xxsmall">Detta är xx-small</p>
+<p class="xsmall">Detta är x-small</p>
+<p class="small">Detta är small</p>
+<p class="medium">Detta är medium</p>
+<p class="large">Detta är large</p>
+<p class="xlarge">Detta är x-large</p>
+<p class="xxlarge">Detta är xx-large</p>
+<br>
+<p>Man kan också ange hur stor en text ska vara i % eller em. Dessa typer av font-size är relativa. % sätter fonten till en % av det överordnade elementets storlek. <br>
+Em sätter fonten relativt till font-sizen av elementet, 2em betyder alltså att fonten är två gånger större än den ursprungliga fonten</p>
+
+<p class="procent">Detta är en text med font-size 200%</p>
+<p class="em">Detta är en text med font-size 3em</p>
+
+<h1>Färg</h1>
+
+<p>Genom att sätta color: i CSS kan man välja vilken färg ett element ska ha</p>
+<p class="blue">Detta är en text med CSS color:blue </p>
+<p class="red"> Detta är en text med CSS color: #990000 (hex) </p>
+
+<h1>Teckensnitt</h1>
+
+<p>Som tidigare nämnt finns det alltså font-familys för att ange vilken font en viss text ska ha. Inom begreppet font finns det generiska familjer, vilka exempelvis är serif, sans serif eller monospace<br>
+samt font familjer, vilka exempelvis är "Times New Roman", "Arial" eller "Helvetica". De generisa familjerna är en grupp av fontfamiljer med ett liknande utseende, medans font-familjer är specifika fonter<br></p>
+
+<p>Genom att endast skriva font: i CSS kan man dock specifiera flera egenskaper för en text på en gång, exempelvis (i CSS) font: 20px arial, sans-serif;;</p>
+
+<p class="font"> Detta är en text med storlek 20px i arial, med sans-serif som "fallback"</p>
+
+<h1>Listor</h1>
+
+<p>Med CSS-egenskapen list-style kan man ange olika stilar för listor i HTML. Likt CSS-egenskapen font kan man med list-style sätta alla egenskaper för en lista på en gång<br>
+Exempel: list-style: square inside;</p>
+
+<ul class="liststyle">
+    <li>Lista med fyrkantig punkt och position "inside"</li>
+</ul>
+
+<ol></ol>
+
+</body>
+</html>

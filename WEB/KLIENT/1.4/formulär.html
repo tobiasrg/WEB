@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulär</title>
+</head>
+<body>
+<form method="get" action="https://people.dsv.su.se/~pierre/courses/05_ass/ip2/2/2.2.1/perl/example.cgi">
+    <fieldset>
+        <legend>Information</legend>
+        Användarnamn:*<br>
+        <input type="text" autofocus required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+               title="Siffror samt stora och små bokstäver" name="username"><br><br>
+        Lösenord:* <br>
+        <input type="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+               title="Siffror samt stora och små bokstäver" name="password"><br><br>
+
+        Kommentarer: <br>
+        <textarea rows="10" cols="50" name="textarea"></textarea><br>
+
+        Kryssa i rutan? <br>
+        <label for="checkbox">Ja</label>
+        <input type="checkbox" id="checkbox" name="checkbox"><br><br>
+
+        Kön: <br>
+        <label for="man">Man</label>
+        <input type="radio" id="man" value="Man" name="radio"><br>
+        <label for="kvinna">Kvinna</label>
+        <input type="radio" id="kvinna" value="Kvinna" name="radio"><br>
+        <label for="annat">Annat</label>
+        <input type="radio" id="annat" value="Annat" name="radio"><br><br>
+
+        Välj en siffra: <br>
+        <select name="select">
+            <optgroup label="Siffror">
+                <option>Ett</option>
+                <option>Två</option>
+            </optgroup>
+        </select><br><br>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>HTML5</legend>
+        Browser <br>
+        <input list="browser" name="browser"><br>
+
+        <datalist id="browser">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <br>
+        E-post: <br>
+        <input type="email" placeholder="din@epost.se" name="e-post"><br><br>
+        Url: <br>
+        <input type="url" placeholder="www.exempel.se" name="url"><br><br>
+        Nummer: <br>
+        <input type="number" min="0" max="10" step="1" name="number"><br><br>
+        Omfång: <br>
+        <input type="range" min="0" max="10" step="1" name="range"><br><br>
+        Datum och tid: <br>
+        <input type="datetime-local" name="datetime"><br><br>
+        Datum: <br>
+        <input type="date" name="date"><br><br>
+        Månad: <br>
+        <input type="month" name="month"><br><br>
+        Vecka: <br>
+        <input type="week" name="week"><br><br>
+        Tid: <br>
+        <input type="time" name="time"><br><br>
+        Kryptering: <br>
+        <keygen name="kryptering">
+            <br><br>
+
+
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+            <input type="image" src="forest.jpg" width="45" height="35" alt="Submit">
+            <input type="button" value="Knapp"><br>
+    </fieldset>
+
+</form>
+
+
+<form method="post" enctype="multipart/form-data"
+      action="https://people.dsv.su.se/~pierre/courses/05_ass/ip2/2/2.2.2/perl/example.cgi"><br><br>
+    <fieldset>
+        <legend>Ladda upp en fil</legend>
+        <br>
+        Ladda upp en fil: <br><br>
+        <input type="file" name="file"><br><br>
+        <input type="submit">
+    </fieldset>
+</form>
+
+</body>
+</html>

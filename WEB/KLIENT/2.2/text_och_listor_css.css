@@ -1,0 +1,73 @@
+p.serif{
+    font-family: "Times New Roman", serif;
+}
+
+p.sansserif{
+    font-family: "Arial", sans-serif;
+}
+
+p.monospace{
+    font-family:"Courier New", monospace;
+}
+
+p.xxsmall{
+ font-size: xx-small;
+
+}
+
+p.xsmall{
+    font-size: x-small;
+
+}
+
+p.small{
+    font-size: small;
+
+}
+p.medium{
+
+    font-size: medium;
+}
+
+p.large{
+
+    font-size: large;
+}
+
+p.xlarge{
+
+    font-size: x-large;
+}
+
+p.xxlarge{
+    font-size: xx-large;
+
+}
+
+p.procent{
+    font-size: 200%;
+
+}
+
+p.em{
+    font-size: 3em;
+
+}
+
+p.blue{
+    color:blue;
+
+}
+p.red{
+    color: #990000;
+
+}
+
+p.font{
+    font: 20px arial, sans-serif;;
+
+}
+
+ul.liststyle{
+    list-style: square inside;
+}
