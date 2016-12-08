@@ -1,0 +1,33 @@
+body{
+background: url(mountain.jpg)
+}
+
+h1.h1Bakgrund{
+color: white;
+    background: url(theater.jpg);
+}
+
+li {
+    color: white;
+    background: url(theater.jpg);
+}
+p{
+    color:white;
+}
+.bild{
+float:left;
+}
+.h1Bild{
+clear: both;
+    color:white;
+}
+.textBild{
+
+}
+span{
+    color:black;
+}
+
+
+
+
