@@ -3,9 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <title>Tabell och formulär</title>
+    <link rel="stylesheet" href="css_tabell_formulär.css" type="text/css">
 </head>
 <body>
+<h1>Table layout</h1>
 
+<p>Table-layout egenskapen kan i CSS användas för att sätta vilken algoritm en tabell ska använda. <br>
+    Olika värden påverkar hur tabellen ser ut på olika sätt</p>
+<p>Exempel på olika värden</p>
+
+<ul>
+    <li><b>Auto</b> - Denna algoritm är standardvärdet för en tabell. Auto innebär.<br>
+        att columnernas bredd sätts utifrån det bredaste innehållet i tabellen där det inte går att göra en radbrytning.<br>
+        Algoritmen kan vara långsam då innehållet i tabellen först måste läsas igenom innan den kan skapas
+    </li>
+    <li><b>Fixed </b>- Denna algoritm formar istället tabellen utifrån hur bred tabellen är satt att vara, istället för
+        innehållet.<br>
+        Detta gör att tabellen snabbare kan läsas in då browsern inte behöver gå igenom innehållet.
+    </li>
+</ul>
+
+<p><i>Exempel för Auto</i></p>
+<table>
+    <tr>
+        <th>Kolumn 1</th>
+        <th>Kolumn 2</th>
+    </tr>
+    <tr>
+        <td>Rad 2</td>
+        <td>Rad 2</td>
+    </tr>
+    <tr>
+        <td>--------------------denna rad gör att tabellen blir bredare då den anpassar sig efter
+            texten---------------------
+        </td>
+        <td> ------------Rad 3----------</td>
+
+
+    </tr>
+</table>
+
+<p><i>Exempel för fixed</i></p>
+
+<table class="tableFixed">
+    <tr>
+        <th>Kolumn 1</th>
+        <th>Kolumn 2</th>
+    </tr>
+    <tr>
+        <td>Rad 2</td>
+        <td>Rad 2</td>
+    </tr>
+    <tr>
+        <td>--------------------i och med att tabellen är satt till fixed så anpassar den storleken efter tabellens width: snarare än texten.---------------------
+        </td>
+        <td> ------------I detta fall är width satt till 400px----------</td>
+
+
+    </tr>
+</table>
+
+
+<h1>CSS och formulär</h1>
+<p>CSS kan också användas för att ändra utseendet för HTML-formulär.<br>
+Man kan exempelvis sätta bredd, padding, färg eller border på ett input-fält, </p>
+
+<form>
+    <p>Textfält med CSS: </p>
+    <input type="text" class="exampleText"><br>
+    <pre>CSS: input[type=text] {
+        background-color: white;
+        margin: 20px;
+        border: 1px solid blue;
+        border-radius: 25px;
+        }</pre>
+
+
+    <input type="password" class="examplePassword"><br>
+    <pre>CSS: input[type=password]{
+        background-color: lightgray;
+        margin: 20px;
+        border: 1px solid black;
+        }</pre>
+    <textarea class="exampleTextarea"></textarea><br>
+    <pre>CSS: textarea {
+        background-color: lightgray;
+        margin: 20px;
+        height: 100px;
+        width: 200px;
+        resize: none;
+        }</pre>
+    <input type="button" class="exampleButton" value="Knapp"><br>
+    <pre>CSS: input[type=button]{
+        background-color: forestgreen;
+        border: 1px solid black;
+        color: white;
+        padding: 15px 30px;
+        text-decoration: none;
+        margin: 20px;
+        cursor: pointer;
+        }</pre>
+</form>
 
 </body>
 </html>

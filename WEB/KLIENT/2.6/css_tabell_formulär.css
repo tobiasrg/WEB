@@ -1,0 +1,40 @@
+.tableFixed{
+    table-layout: fixed;
+    width: 400px;
+}
+
+table, th, td{
+    border: 2px solid black;
+}
+
+input[type=button]{
+    background-color: forestgreen;
+    border: 1px solid black;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 20px;
+    cursor: pointer;
+}
+
+textarea {
+background-color: lightgray;
+    margin: 20px;
+    height: 100px;
+    width: 200px;
+    resize: none;
+}
+
+input[type=text] {
+    background-color: white;
+    margin: 20px;
+    border: 1px solid blue;
+    border-radius: 25px;
+}
+
+input[type=password]{
+    background-color: lightgray;
+    margin: 20px;
+    border: 1px solid black;
+}
+
