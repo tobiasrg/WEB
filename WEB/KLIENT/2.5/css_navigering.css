@@ -5,10 +5,11 @@ a:hover - a link when the user mouses over it
 a:active - a link the moment it is clicked
 */
 
-table, th, td{
+table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
+
 .imageLink {
     display: block;
     height: 100px;
@@ -16,17 +17,17 @@ table, th, td{
 
 }
 
-
 .image {
     width: 200px;
     height: 100px;
 }
+
 .exempel {
     cursor: crosshair;
 }
 
 .exempel:link {
-    color:black;
+    color: black;
 }
 
 .imageLink:link {

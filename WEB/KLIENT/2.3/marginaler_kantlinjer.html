@@ -2,11 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Marginaler och kantlinkjer</title>
+    <title>Marginaler och kantlinjer</title>
+    <link rel="stylesheet" type="text/css" href="marginaler_kantlinjer.css">
 </head>
 <body>
+<h1>Boxmodell</h1>
+<p>I HTML kan alla element betraktas som "boxar" När man talar om design och layout i CSS används därför begreppet
+    "Boxmodell".<br>
+    Detta är i princip en box som omsluter HTML elementet, och består av ett antal olika delar. </p>
+<ul>
+    <li><b>Content</b> - Innehållet i boxen, där text och bild syns</li>
+    <li><b>Padding</b> - Lägger man till padding vidgas området kring content. Denna är transparent.</li>
+    <li><b>Border</b> - Border är kanten som omsluter padding och content
+        <ul>
+            <li class="colorBorder">Border-color - Specifierar vilken färg på bordern som ska visas. Denna text använder
+                border-color: navy
+            </li>
+            <li class="styleBorder">Border-style - Specifierar vilken typ av border som ska visas. Finns exempelvis
+                solid, ridge, dashed eller dotted. Denna text använder border-style: dotted
+            </li>
+            <li class="widthBorder">Border-width - Specifierar hur bred bordern ska vara, denna text har border-width
+                3px
+            </li>
+        </ul>
+    </li>
+    <li><b>Margin</b> - Detta är området utanför bordern. Använder man margin vidgar man området som omsluter border.
+        Denna är
+        också transparent
+    </li>
+</ul>
 
+<p><i>Exempel</i></p>
+<p><i>Illustration från W3schools.com</i></p>
 
+<img src="W3_Boxmodel.PNG" alt="boxmodell">
 
+<div class="exempel">Detta är en box med 20px padding, 10px border-width, solid som border-style, black som border-color
+    och 20px margin
+</div>
+<p>Det går även att använda outline i CSS, vilket är en linje som läggs runt elementet, men utanför bordern för att få denna att stå ut. </p>
+<p class="outlineText">Text med grön, dotted, thick outline och svart border</p>
+
+<h1>Synlighet</h1>
+<h3>Visibility</h3>
+<p>Visibility-egenskapen i CSS specifierar hurvida ett element ska vara synligt eller inte</p>
+<p><i>Exempel (båda boxarna är satta med background: lightseagreen)</i></p>
+<table>
+    <tr>
+        <th>Status</th>
+        <th>Box</th>
+    </tr>
+    <tr>
+        <td>Visibility:visible</td>
+        <td><div class="divVisible"></div></td>
+    </tr>
+    <tr>
+        <td>Visibility:hidden</td>
+        <td><div class="divHidden"></div></td>
+    </tr>
+</table>
+
+<h3>Clip</h3>
+
+<img src="" width="100" height="140">
+<h3>Display</h3>
+<h3>Overflow</h3>
 </body>
 </html>
