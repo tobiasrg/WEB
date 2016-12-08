@@ -40,7 +40,8 @@
 <div class="exempel">Detta är en box med 20px padding, 10px border-width, solid som border-style, black som border-color
     och 20px margin
 </div>
-<p>Det går även att använda outline i CSS, vilket är en linje som läggs runt elementet, men utanför bordern för att få denna att stå ut. </p>
+<p>Det går även att använda outline i CSS, vilket är en linje som läggs runt elementet, men utanför bordern för att få
+    denna att stå ut. </p>
 <p class="outlineText">Text med grön, dotted, thick outline och svart border</p>
 
 <h1>Synlighet</h1>
@@ -54,18 +55,167 @@
     </tr>
     <tr>
         <td>Visibility:visible</td>
-        <td><div class="divVisible"></div></td>
+        <td>
+            <div class="divVisible"></div>
+        </td>
     </tr>
     <tr>
         <td>Visibility:hidden</td>
-        <td><div class="divHidden"></div></td>
+        <td>
+            <div class="divHidden"></div>
+        </td>
     </tr>
 </table>
 
 <h3>Clip</h3>
-
-<img src="" width="100" height="140">
+<p>Med clip kan man beskära en bild till den storlek som önskas i rektangelform. Elementet måste dock vara positionerat
+    som position:absolute för att detta ska fungera</p>
+<p><i>Exempel</i></p>
+<img class="bild" src="forest.jpg" alt="Forest" height="200" width="300">
+<br><br><br><br><br>
+<p>Bilden (&lt;img class="bild" src="forest.jpg" alt="Forest" height="200" width="300"&gt;) är här beskärd genom
+    .bild{position: absolute; clip: rect(0px,100px,100px,0px);}</p>
 <h3>Display</h3>
+<p>Display-egenskapen specifierar vilken typ av box ett element ska ha. Det finns flera olika alternativ för detta,
+    bland annat inline som är standardvärdet (ex. &lt;span&gt;), block som gör att elementet<br>
+    representeras som ett block-element (ex. &lt;p&gt;), list-item som representerar elementet som ett listelement(&lt;li&gt;)
+    eller none som döljer elementet helt och hållet</p>
+
+<p><i>Exempel</i></p>
+<ul>
+
+    <li><span>Detta är ett span </span><span
+            class="displayInline">Detta är ett annat span med  inline som displayvärde </span><span>Detta är ett tredje span</span>
+    </li>
+    <li><span>Detta är ett span</span><span
+            class="displayBlock">Detta är ett annat span med block som displayvärde</span><span>Detta är ett tredje span</span>
+    </li>
+    <li><span>Detta är ett span</span><span class="displayListItem">Detta är ett annat span med list-item som displayvärde</span><span>Detta är ett tredje span</span>
+    </li>
+    <li><span>Detta är ett span (Spannet efter detta kommer inte att synas då display är none)</span><span
+            class="displayNone">Detta är ett annat span med none som displayvärde</span><span>Detta är ett tredje span</span>
+    </li>
+</ul>
 <h3>Overflow</h3>
+<p>Med overfrlow-egenskapen kan man specifiera vad som ska hända om innehållet går över sitt omslutande element.
+    Egenskapen specifierar till exempel<br>
+    om innehållet ska kunna gå att skrolla eller om det ska beskäras</p>
+
+<table>
+    <tr>
+        <th>Status</th>
+        <th>Box</th>
+    </tr>
+    <tr>
+        <td>overflow:hidden</td>
+        <td>
+            <div class="divBeskärd">Detta är en div med egenskapen overflow:hidden - Detta är en div med egenskapen
+                overflow:hidden - Detta är en div med egenskapen overflow:hidden -
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>overflow:scroll</td>
+        <td>
+            <div class="divScroll">Detta är en div med egenskapen overflow:scroll - Detta är en div med egenskapen
+                overflow:scroll - Detta är en div med egenskapen overflow:scroll -
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+<h1>Övriga egenskaper</h1>
+
+<table>
+    <tr>
+        <th>Beskrivning</th>
+        <th>Box</th>
+        <th>CSS</th>
+    </tr>
+    <tr>
+        <td>Opacity - används för att sätta <br>opaciteten för ett element.<br>Nivåerna för opaciteten beskriver <br>transparens-nivån
+            där 1 är helt syndlig,<br> 0.5 är 50% transparens och 0 är osynlig.
+        </td>
+        <td>
+            <div class="divOpacity">Detta är en box med opacity satt till 0.5</div>
+        </td>
+        <td>.divOpacity {
+            opacity: 0.5;
+            background: lightseagreen;
+            width: 100px;
+            height: 100px;
+            }
+        </td>
+    </tr>
+    <tr>
+        <td>Border-radius - används för att sätta rundade hörnor för ett element</td>
+        <td>
+            <div class="divBorderRadius"></div>
+        </td>
+        <td>.divBorderRadius{width: 100px;
+            height: 100px;
+            border: 2px solid;
+            border-radius: 25px;
+            background: lightseagreen;}
+        </td>
+    <tr>
+        <td>Box-Shadow - lägger till en eller fler skuggor till elementet</td>
+        <td>
+            <div class="divBoxShadow"></div>
+        </td>
+        <td>.divBoxShadow {
+            width: 100px;
+            height: 100px;
+            box-shadow: 10px 10px 5px #888888;
+            background: lightseagreen;
+            }</td>
+    </tr>
+    <tr>
+        <td>Gradienter - låter användaren sätta en jämn övergång mellan två eller fler färger<br>
+            Exemplet till höger är en linjär gradient</td>
+        <td>
+            <div class="divGradients"></div>
+        </td>
+        <td>.divGradients {
+            width: 100px;
+            height: 100px;
+            background: lightseagreen;
+            background: linear-gradient(lightseagreen,darkblue);
+            }</td>
+    </tr>
+    <tr>
+        <td>Radial-gradient</td>
+        <td>
+            <div class="divGradientsRadial"></div>
+        </td>
+        <td>.divGradientsRadial{
+            width: 100px;
+            height: 100px;
+            background: lightseagreen;
+            background: radial-gradient(darkblue 5%, darkslateblue 20%, lightseagreen 60%  );
+            }</td>
+    </tr>
+</table>
+
+<h2>Multippla bakgrundsbilder</h2>
+<p>Med CSS kan man också ange att ett element ska ha flera bakgrudnsbilder med background-image egenskapen.<br>
+Väljer man att ha två bakgrunder läggs dessa ovanpå varandra, där den först angedda bilden är den som ligger överst av de två bilderna.
+</p>
+
+<p><i>Exempel</i></p>
+<div class="divMultBackgrounds">lala</div>
+<p><i>CSS</i><br>
+    .divMultBackgrounds {<br>
+    height: 500px;<br>
+    width:500px;<br>
+    background-image: url(Five-pointed_star.svg.png), url(forest.jpg);<br>
+    background-size: 500px, 500px;<br>
+    background-position: right bottom, left top;<br>
+    background-repeat: no-repeat, repeat;<br>
+
+    }</p>
+
+
 </body>
 </html>
