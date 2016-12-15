@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Anpassning olika enheter</title>
+    <link rel="stylesheet" type="text/css" href="css_anpassning_stationär.css">
+    <link rel="stylesheet" type="text/css" href="css_anpassning_mobil.css">
+    <link rel="stylesheet" type="text/css" href="css_anpassning_skrivare.css">
 </head>
 <body>
+
+<h1>Anpassning för olika enheter</h1>
+<p>Denna sida kommer att ändras beroende på vilken enhet som används</p>
+<div class="background_div">
+    <span>
+        För skrivare finns det speciella sidkonstruktioner:<br><br>
+        page-break-after: Sätter en sidbrytning efter elementet när något ska skrivas ut.<br>
+        page-break-before: Sätter en sidbrytning innan elementet om något ska skrivas ut <br>
+        page-break-inside: Kan användas för att undvika sidbrytningar inom paragrafer genom att exempelvis sätta page-break-inside:avoid.<br>
+        size: Specifierar storleken för en page-box (@page). Denna går att sätta till olika värden, exemepvis auto som sätter boxen till målets storlek och orientering
+        eller landscape som överskuggar målets orientering. Denna sida är satt till size:landscape. <br>
+        orphans eller widow: Dessa egenskaper används för att specifiera hur en paragraf ska delas upp om dessa blir sidöverskridande. Widow används om man vill definiera det minsta<br>
+        antalet rader på den nya sidan, och orphans om man vill definiera hur många rader som får finnas kvar på den gamla sidan.
+
+    </span>
+</div>
+
 
 </body>
 </html>
