@@ -1,30 +1,30 @@
 $(document).ready(function(){
 
     /*Ändra en egenskap för ett HTML-elementet*/
-    $("#change").click(function(){
-        $("#change-p").html("<h1>Rubrik</h1>");
+    $("#ändra").click(function(){
+        $("#ändraText").html("<h1>Rubrik</h1>");
     });
 
     /*Lägga till nytt innehåll till ett HTML-elementet*/
-    $("#add").click(function(){
-        $("#list").append("<li>Ny</li>");
+    $("#läggTill").click(function(){
+        $("#lista").append("<li>Ny</li>");
     });
 
     /*Ta bort ett HTML-element*/
-    $("#delete").click(function(){
-        $("#delete-p").remove();
+    $("#taBort").click(function(){
+        $("#taBortText").remove();
     });
 
     /*Utvinna information från ett HTML-element*/
-    $("#getText").click(function(){
+    $("#hämtaText").click(function(){
         alert("Hämtat: " + $("h2").text());
     });
 
-    $("#deleteAttr").click(function(){
+    $("#bortAttribut").click(function(){
         $(".btn").removeAttr("type");
     });
 
-    $("#addAttr").click(function(){
+    $("#läggTillAttribut").click(function(){
         $(".btn").attr("type", "button");
     });
 
