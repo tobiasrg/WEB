@@ -1,0 +1,64 @@
+.Rubrik {
+    text-align: center;
+    color: darkblue;
+    font-family: Arial;
+    -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    -moz-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+#sida1 {
+    background-color: grey;
+    height: 100px;
+    width: 100%;
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 9999;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#sida1{
+    margin-top: 100px;
+    width: 100%;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0
+    }
+    40% {
+        opacity: .6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0
+    }
+    40% {
+        opacity: .6
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+
