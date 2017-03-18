@@ -7,18 +7,38 @@
     <title>Tvättstuga</title>
 
 
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<div class="navbar">
-    <ul>
-        <li><a href="#intro">Om hemsidan</a></li>
-        <li><a href="#boka">Boka tid</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-    </ul>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+
+            <ul class="left hide-on-med-and-down">
+                <li><a class="active" href="#sida1">Intro</a></li>
+                <li><a href="#sida2">Boka</a></li>
+                <li><a href="#sida3">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
 </div>
 <div class="main">
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src=.media/trä.jpg">
+            <p>blablabla</p>
+        </div>
+    </div>
+
     <div id="sida1">
         <a id="intro" class="smooth"></a>
         <h1 class="Rubrik">Rubrik</h1>
@@ -34,5 +54,7 @@
         <p>Balblabla</p>
     </div>
 </div>
+
 </body>
+
 </html>

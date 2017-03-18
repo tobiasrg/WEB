@@ -1,3 +1,10 @@
-/**
- * Created by Tobias on 2017-03-17.
- */
+$(document).ready(function () {
+    console.log("ready!");
+
+    $('.parallax').parallax();
+    $(".button-collapse").sideNav();
+
+
+
+
+});
