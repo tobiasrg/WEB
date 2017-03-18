@@ -1,14 +1,18 @@
 .Rubrik {
     text-align: center;
-    color: darkblue;
+    color: white;
     font-family: Arial;
     -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     -moz-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
+.parallax-container{
+    height: 200px;
+}
+
 #sida1 {
-    background: url("../media/clothes-peg-1913467_1920.jpg");
+    background: url("../images/trä.jpg");
     height: 600px;
     width: 100%;
     margin-top: 100px;

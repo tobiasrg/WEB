@@ -18,6 +18,7 @@
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
 <div class="navbar-fixed">
     <nav>
@@ -34,14 +35,14 @@
 <div class="main">
     <div class="parallax-container">
         <div class="parallax">
-            <img src=.media/trä.jpg">
-            <p>blablabla</p>
+            <img src="images/trä.jpg">
+            <h1 class="Rubrik">Rubrik</h1>
         </div>
     </div>
 
     <div id="sida1">
         <a id="intro" class="smooth"></a>
-        <h1 class="Rubrik">Rubrik</h1>
+
     </div>
 
     <div id="sida2">
